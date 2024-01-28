@@ -15,65 +15,6 @@ import com.studentdetail.student.Entity.StudentRecord;
 @Service
 public class Services implements StudentService{
 	
-// --------This code I used for CRUD operation when database not connected----------	
-//	List<StudentRecord> list;
-//	
-//	public Services() {
-//		 list=new ArrayList<>();
-//		 list.add(new StudentRecord(100, "Ram", "Ramcharan", "Sita", 5, "A"));
-//		 list.add(new StudentRecord(101,"Ajay"," Rakesh", "Radha", 5, "C"));
-//	}
-//
-//	@Override
-//	public List<StudentRecord> getRecord() {
-//		// TODO Auto-generated method stub
-//		return list;
-//	}
-//
-//	@Override
-//	public StudentRecord getRecordBy(int studentID) {
-//		
-//		StudentRecord st=null;
-//		
-//		for(StudentRecord str:list ) {
-//			if (str.getScholarNo()==studentID) {
-//				st=str;
-//				break;
-//			}
-//		}
-//		return st;	
-//	}
-//
-//	@Override
-//	public StudentRecord addRecord(StudentRecord studentRecord) {
-//		list.add(studentRecord);
-//		return studentRecord;
-//	}
-//	
-//	@Override
-//	public StudentRecord updateRecord(StudentRecord studentRecord) {
-//		list.forEach(e->{
-//			if(e.getScholarNo()==studentRecord.getScholarNo()) {
-//				e.setName(studentRecord.getName());
-//				e.setFatherName(studentRecord.getFatherName());
-//				e.setMotherName(studentRecord.getMotherName());
-//				e.setStandard(studentRecord.getStandard());
-//				e.setSection(studentRecord.getSection());
-//			}
-//		});
-//		return studentRecord;
-//	}
-//
-//	@Override
-//	public void deleteRecord(int studentId) {
-//		list=this.list.stream().filter(e->e.getScholarNo()!=studentId).collect(Collectors.toList());
-//	}
-
-	
-	
-	//-------------------This code is when DB is Connected---------------------
-	
-	
 	//Creating StudentdDao variable
 	
 	@Autowired
